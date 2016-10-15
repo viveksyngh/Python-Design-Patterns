@@ -25,9 +25,10 @@ class Hotelier(object):
 
     def __is_available(self):
         print "Is the hotel free for event on given day?"
+        return True
 
     def book_hotel(self):
-        if self.__is_available:
+        if self.__is_available():
             print "Registered the booking\n\n"
 
 
@@ -79,6 +80,7 @@ you.ask_event_manager()
 # Event Manager:  Let me talk to the folks!.
 
 # Arranging the hotel for marriage? --
+# Is the hotel free for event on given day?
 # Registered the booking
 
 
